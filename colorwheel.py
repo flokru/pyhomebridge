@@ -13,7 +13,7 @@ def wheel():
     light.transitiontime = 5
     light.on = True
     color = (random.random(), random.random())
-    print(f'Setting to color: {color}')
+    #print(f'Setting to color: {color}')
     light.xy = color
     light.saturation = int(random.random() * 255.0)
     light.brightness = 255
