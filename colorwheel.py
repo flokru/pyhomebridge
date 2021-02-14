@@ -28,14 +28,15 @@ def off():
 
 
 def status():
-    b = Bridge('192.168.0.11')
-    b.connect()
-    b.lights
-    light = b.lights_by_name['Wohnzimmer Sideboard Stehlampe']
-    if light.on:
-        print('true')
-    else:
-        print('false')
+    print('false')
+    #b = Bridge('192.168.0.11')
+    #b.connect()
+    #b.lights
+    #light = b.lights_by_name['Wohnzimmer Sideboard Stehlampe']
+    #if light.on:
+    #    print('true')
+    #else:
+    #    print('false')
 
 
 if __name__ == "__main__":
