@@ -45,7 +45,7 @@ if __name__ == "__main__":
     elif sys.argv[1] == '--on':
         wheel()
     elif sys.argv[1] == '--off':
-        off()
+        wheel()
     elif sys.argv[1] == '--status':
         status()
     else:
