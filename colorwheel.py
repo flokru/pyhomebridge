@@ -12,7 +12,9 @@ def wheel():
     light = b.lights_by_name['Wohnzimmer Sideboard Stehlampe']
     light.transitiontime = 5
     light.on = True
-    light.xy = (random.random(), random.random())
+    color = (random.random(), random.random())
+    print(f'Setting to color: {color}')
+    light.xy = color
     light.saturation = int(random.random() * 255.0)
     light.brightness = 255
 
