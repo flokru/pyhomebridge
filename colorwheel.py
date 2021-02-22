@@ -9,7 +9,7 @@ def wheel():
     b = Bridge('192.168.0.11')
     b.connect()
     b.lights
-    light = b.lights_by_name['Wohnzimmer Sideboard Stehlampe']
+    light = b.lights_by_name['Kinderzimmer Decke']
     light.transitiontime = 5
     light.on = True
     color = (random.random(), random.random())
