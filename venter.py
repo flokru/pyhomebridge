@@ -55,7 +55,7 @@ while True:
     d.update()
     if d.power != state_previous:
         this_state_since = 0
-        logger.debug(f'State change from {state_previous} to {d.power}')
+        logger.debug(f'State change from "{state_previous}" to "{d.power}"')
         state_previous = d.power
     else:
         this_state_since += tick_time
