@@ -48,7 +48,7 @@ b.connect()
 b.lights
 box = b.lights_by_name['Steckdose Weihnachtsbaum']
 
-configure_logger()
+configure_logger(1)
 logger = get_logger()
 
 while True:
