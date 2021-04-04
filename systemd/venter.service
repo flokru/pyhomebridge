@@ -1,0 +1,15 @@
+[Unit]
+Description=Venter Service
+Wants=network-online.target
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+ExecStart=/usr/local/bin/stan --log-file /var/log/stan.log mail copy-flagged -l
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
