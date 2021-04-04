@@ -62,10 +62,10 @@ while True:
     if this_state_since == (switch_lag_rounds + 1) * tick_time:
         if state_previous == 'ON':
             logger.debug(f'Switching on after lag of '
-                         f'{switch_lag_rounds * tick_time}')
+                         f'{switch_lag_rounds * tick_time} s')
             box.on = True
         if state_previous == 'OFF':
             logger.debug(f'Switching off after lag of '
-                         f'{switch_lag_rounds * tick_time}')
+                         f'{switch_lag_rounds * tick_time} s')
             box.on = False
     time.sleep(tick_time)
