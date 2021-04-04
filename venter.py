@@ -6,8 +6,8 @@ import time
 import logging
 
 this_state_since = 0
-switch_lag_rounds = 3
-tick_time = 10
+switch_lag_rounds = 10
+tick_time = 60
 state_previous = ''
 
 def configure_logger(verbosity, log_file=None):
