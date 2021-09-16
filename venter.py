@@ -46,7 +46,7 @@ d = denonavr.DenonAVR("192.168.0.12", "Denon")
 b = Bridge('192.168.0.11')
 b.connect()
 b.lights
-box = b.lights_by_name['Steckdose Weihnachtsbaum']
+box = b.lights_by_name['Lüftung TV-Bank']
 
 configure_logger(1)
 logger = get_logger()
